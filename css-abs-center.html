@@ -35,13 +35,58 @@
       margin-left: -10px;
       margin-top: -10px;
     }
+
+    .form {
+      width: 100px;
+      height: 100px;
+    }
+
+    .form1 {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 100px;
+      border: 1px solid red;
+    }
+
+    .form2 {
+      width: 50px;
+      height: 50px;
+      background: #03f;
+      display: inline-block;
+    }
+
+    .list {
+      display: table;
+      width: 100px;
+      height: 100px;
+      border: wheat solid 1px;
+    }
+
+    .list1 {
+      display: table-cell;
+      vertical-align: middle;
+    }
   </style>
 </head>
 
 <body>
   <div>
     <p class="p1">行内定位</p>
-    <p class="parents"><span class="child">绝对</span></p>
+    <p class="parents">
+      <span class="child">绝对</span></p>
+    <div class="form1">
+      <div class="form2">
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="list">
+      <div class="list1">
+        <span class="list2">表单</span>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 

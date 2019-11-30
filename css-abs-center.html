@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .p1 {
+      border: red 1px solid;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+    }
+
+    .parents {
+      width: 100px;
+      height: 100px;
+      border: 1px solid green;
+      position: relative;
+    }
+
+    .child {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -10px;
+      margin-top: -10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="p1">行内定位</p>
+    <p class="parents"><span class="child">绝对</span></p>
+  </div>
+</body>
+
+</html>

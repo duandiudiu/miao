@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    ul {
+      list-style: none;
+      padding: 0;
+      background-color: rgb(164, 164, 170);
+      text-align: center;
+      font-family: 宋体;
+    }
+
+    ul.menu ul li:hover {
+      background-color: yellow;
+    }
+
+    ul.menu>li {
+      display: inline-block;
+      background-color: rgb(216, 190, 190)
+    }
+
+    li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    li:hover>ul {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="menu">
+    <li>文件
+      <ul>
+        <li>保存</li>
+        <li>另存为</li>
+        <li>退出
+          <ul>
+            <li>保存</li>
+            <li>另存为</li>
+            <li>退出
+              <ul>
+
+
+                <li>保存</li>
+                <li>另存为</li>
+                <li>退出 </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li>文件
+      <ul>
+        <li>保存</li>
+        <li>另存为</li>
+        <li>退出
+          <ul>
+            <li>保存</li>
+            <li>另存为</li>
+            <li>退出
+              <ul>
+
+
+                <li>保存</li>
+                <li>另存为</li>
+                <li>退出 </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+    <li>文件
+      <ul>
+        <li>保存</li>
+        <li>另存为</li>
+        <li>退出
+          <ul>
+            <li>保存</li>
+            <li>另存为</li>
+            <li>退出
+              <ul>
+
+
+                <li>保存</li>
+                <li>另存为</li>
+                <li>退出 </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+</body>
+
+</html>

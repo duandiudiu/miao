@@ -6,62 +6,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <style>
-    input {
-      display: none;
-    }
+  <html lang="en">
 
-    input+label {
-      display: inline-block;
-      height: 100px;
-      width: 185px;
-      border: 2px solid grey;
-      border-radius: 50px;
-      box-shadow: inset 0px 0px 0px 0px #30f34d;
-      transition: 0.5s;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
-    input+label::before {
-      content: '';
-      display: block;
-      background-color: #fff;
-      box-sizing: border-box;
-      width: 94px;
-      height: 94px;
-      border-radius: 50px;
-      box-shadow: 0px 5px 14px 2px rgba(32, 33, 36, 0.7);
-      position: relative;
-      left: 4px;
-      top: 3px;
-      transition: width 0.5s cubic-bezier(.25, .1, .25, 15), left 0.5s;
-    }
+    <style>
+      input {
+        display: none;
+      }
 
-    input:checked+label {
-      box-shadow: inset 57px 0px 0px 110px #30f34d;
-      transition: 0.3s;
-    }
+      #iosbox+label {
+        border: 1px solid grey;
+        width: 120px;
+        height: 60px;
+        border-radius: 40px;
+        display: inline-block;
+        position: relative;
+        /* box-shadow: 0 0 1px black; */
+        transition: .3s;
+      }
 
-    input:checked+label::before {
-      content: '';
-      display: block;
-      background-color: #fff;
-      box-sizing: border-box;
-      width: 95px;
-      height: 94px;
-      border-radius: 50px;
-      position: relative;
-      left: 85px;
-      top: 3px;
-      transition: width 0.5s cubic-bezier(.25, .1, .25, 15), left 0.5s;
-    }
-  </style>
+      #iosbox+label::before {
+        display: inline-block;
+        content: " ";
+        background-color: #fff;
+        box-shadow: 0 0 10px grey;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        /* border: 1px solid; */
+        border-radius: 32px;
+        transition: .3s;
+      }
 
-  <title>checkbox</title>
-</head>
+      #iosbox:checked+label::before {
+        left: 63px;
+      }
+
+      #iosbox:checked+label {
+        box-shadow: 0 0 0 30px lime inset;
+      }
+    </style>
+    <style>
+      ul {
+        list-style-type: none;
+        font-size: 17px;
+        line-height: 36px;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      span {}
+
+      .rad {
+        display: none;
+      }
+
+      .lab {
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+        border: 2px solid;
+        border-radius: 24px;
+        position: relative;
+        transition: .3s;
+      }
+
+      .lab::before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        background-color: lime;
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        transition: .3s;
+      }
+
+      .rad:checked+.lab::before {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        left: 4px;
+        bottom: 4px;
+        margin-left: 12px;
+        margin-top: 10px;
+      }
+
+      .lab::after {
+        content: " ";
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        background-color: rgba(0, 250, 0, 0.3);
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        transition: .3s;
+        transition-delay: .3s;
+
+      }
+
+      .rad+.lab {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        left: -17px;
+        margin: 10px;
+      }
+
+      .rad:checked+.lab {
+        border-color: lime;
+        margin: -10px;
+      }
+    </style>
+
+  </head>
 
 <body>
-  <input type="checkbox" id="up">
-  <label for="up"></label>
+  <input type="checkbox" name="ios" id="iosbox">
+  <label for="iosbox">
+  </label>
+
+  <ul>
+    <li><input type="radio" name="a" id="rad_a" class="rad"><label for="rad_a" class="lab"></label><span>Radio
+        button</span></li>
+    <li><input type="radio" name="a" id="rad_b" class="rad"><label for="rad_b" class="lab"></label><span>Radio
+        button</span></li>
+    <li><input type="radio" name="a" id="rad_c" class="rad"><label for="rad_c" class="lab"></label><span>Radio
+        button</span></li>
+  </ul>
 </body>
+
+</html>
 
 </html>

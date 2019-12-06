@@ -92,23 +92,23 @@
       z-index: 10;
     }
 
-    .p:checked~section {
+    #p:checked~section {
       left: 0;
     }
 
-    .o:checked~section {
+    #o:checked~section {
       left: -100%;
     }
 
-    .i:checked~section {
+    #i:checked~section {
       left: -200%;
     }
 
-    .u:checked~section {
+    #u:checked~section {
       left: -300%;
     }
 
-    .y:checked~section {
+    #y:checked~section {
       left: -400%;
     }
 
@@ -133,8 +133,8 @@
       background-position: -43px 4px;
     }
 
-   .left:hover,
-    .right:hover+{
+    .left:hover,
+    .right:hover {
       background-color: rgba(0, 0, 0, 0.3);
     }
 
@@ -143,15 +143,16 @@
       background-color: #fff;
     }
 
+
     input:nth-child(4):checked+label {
       z-index: 11;
     }
 
-    input:checked+*+*+*+*+*+*+*+*+*+*+label {
+    input:checked+*+*+*+*+*+*+*+*+label {
       z-index: 10;
     }
 
-    input:checked+*+*+*+*+*+*+*+*+*+*+*+*+label {
+    input:checked+*+*+*+*+*+*+*+*+*+label {
       z-index: 10;
     }
   </style>
@@ -228,36 +229,35 @@
 
   </div>
   <div class="logo">
-
   </div>
 
   <div id="a">
-    <input type="radio" name="xiaomi" class="y">
+    <input type="radio" name="xiaomi" id="p">
 
-    <input type="radio" name="xiaomi" class="o">
+    <input type="radio" name="xiaomi" id="o">
 
-    <input type="radio" name="xiaomi" class="i">
+    <input type="radio" name="xiaomi" id="i">
 
-    <input type="radio" name="xiaomi" class="u">
+    <input type="radio" name="xiaomi" id="u">
 
-    <input type="radio" name="xiaomi" class="">
+    <input type="radio" name="xiaomi" id="y">
 
     <label for="p" class="left"></label>
     <label for="o" class="left"></label>
     <label for="i" class="left"></label>
     <label for="u" class="left"></label>
     <label for="y" class="left"></label>
-<section>
-  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/abb3bf8ca4bb3f823d1f962e98679f04.jpg?w=2452&h=920" alt="p">
-  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ad84d80e7fc5990162a387a6b103af01.jpeg?thumb=1&w=1226&h=460"
-    alt="o">
-  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0973f3bcb983e63152829e97c0ca3795.jpg?thumb=1&w=1226&h=460"
-    alt="i">
-  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e52c3e98602b90f198ec316dce253cba.jpg?thumb=1&w=1226&h=460"
-    alt="u">
-  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/05bc8af40fc9f9941808d253034c279d.jpg?thumb=1&w=1226&h=460"
-    alt="y">
-</section>
+    <section>
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/abb3bf8ca4bb3f823d1f962e98679f04.jpg?w=2452&h=920" alt="p">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ad84d80e7fc5990162a387a6b103af01.jpeg?thumb=1&w=1226&h=460"
+        alt="o">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0973f3bcb983e63152829e97c0ca3795.jpg?thumb=1&w=1226&h=460"
+        alt="i">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e52c3e98602b90f198ec316dce253cba.jpg?thumb=1&w=1226&h=460"
+        alt="u">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/05bc8af40fc9f9941808d253034c279d.jpg?thumb=1&w=1226&h=460"
+        alt="y">
+    </section>
 
     <label for="p" class="right"></label>
     <label for="o" class="right"></label>

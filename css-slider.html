@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      width: 100%;
+      margin: 0;
+    }
+
+    #header {
+      background-color: #333333;
+      width: 100%;
+    }
+
+    a {
+      color: lightgray;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+      height: 41px;
+      width: 100%;
+      margin-top: 0;
+      padding: 0;
+      min-width: 1544px;
+    }
+
+    li {
+      display: inline-block;
+      padding: 7px;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    span {
+      color: #393333;
+    }
+
+    .logo {
+      border: 1px solid red;
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url(https://s02.mifile.cn/assets/static/image/logo-footer.png);
+    }
+
+    .logo:hover {
+      background-image: url(https://s02.mifile.cn/assets/static/image/mi-home.png);
+      background-color: orange;
+    }
+
+
+
+
+    #a {
+      position: relative;
+      border: 5px solid;
+      width: 1226px;
+      height: 460px;
+      overflow: hidden;
+      transition: .5s;
+      margin: 10%;
+    }
+
+    section {
+      width: 6195px;
+      font-size: 0;
+      top: 0%;
+      left: 0;
+      position: absolute;
+    }
+
+    img {
+      width: 1226px;
+      height: 460px;
+    }
+
+    input {
+      position: relative;
+      top: calc(100% - 20px);
+      z-index: 10;
+    }
+
+    .p:checked~section {
+      left: 0;
+    }
+
+    .o:checked~section {
+      left: -100%;
+    }
+
+    .i:checked~section {
+      left: -200%;
+    }
+
+    .u:checked~section {
+      left: -300%;
+    }
+
+    .y:checked~section {
+      left: -400%;
+    }
+
+    .left {
+      background: url(https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png) no-repeat;
+      left: 0;
+      width: 40px;
+      height: 70px;
+      z-index: 5;
+      position: absolute;
+      bottom: 40%;
+    }
+
+    .right {
+      background: url(https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png);
+      right: 0;
+      width: 40px;
+      height: 70px;
+      z-index: 5;
+      position: absolute;
+      bottom: 40%;
+      background-position: -43px 4px;
+    }
+
+   .left:hover,
+    .right:hover+{
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    input:checked+*+*+*+label {
+      z-index: 10;
+      background-color: #fff;
+    }
+
+    input:nth-child(4):checked+label {
+      z-index: 11;
+    }
+
+    input:checked+*+*+*+*+*+*+*+*+*+*+label {
+      z-index: 10;
+    }
+
+    input:checked+*+*+*+*+*+*+*+*+*+*+*+*+label {
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <ul>
+      <a href="https://www.mi.com/index.html">
+        <li>小米商城</li>
+      </a>
+      <span>|</span>
+      <a href="https://www.miui.com/" target="_blank">
+        <li>MIUI</li>
+      </a>
+      <span>|</span>
+      <a href="https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Fiot.mi.com%2Fsts%3Fsign%3DfCSIXasbUHiXbFs3j8qOfufIwIw%253D%26followup%3Dhttps%253A%252F%252Fiot.mi.com%252Fcgi-op%252Fapi%252Flogin%253Ffollowup%253Dhttps%25253A%25252F%25252Fiot.mi.com&sid=xiaomiiot&_locale=zh_CN"
+        target="_blank">
+        <li>loT</li>
+      </a>
+      <span>|</span>
+      <a href="https://i.mi.com/" target="_blank">
+        <li>云服务</li>
+      </a>
+      <span>|</span>
+      <a href="https://jr.mi.com/?from=micom" target="_blank">
+        <li>金融</li>
+      </a>
+      <span>|</span>
+      <a href="https://www.xiaomiyoupin.com/" target="_blank">
+        <li>有品</li>
+      </a>
+      <span>|</span>
+      <a href="https://xiaoai.mi.com/" target="_blank">
+        <li>小爱开放平台</li>
+      </a>
+      <span>|</span>
+      <a href="https://qiye.mi.com/" target="_blank">
+        <li>企业团购</li>
+      </a>
+      <span>|</span>
+      <a href="https://www.mi.com/aptitude/list?id=41" target="_blank">
+        <li>资质证照</li>
+      </a>
+      <span>|</span>
+      <a href="https://www.mi.com/aptitude/list" target="_blank">
+        <li>协议规则</li>
+      </a>
+      <span>|</span>
+      <a href="https://www.mi.com/appdownload" target="_blank">
+        <li>下载APP</li>
+      </a>
+      <span>|</span>
+      <a href="" target="_blank">
+        <li>Select Location</li>
+      </a>
+      <span>|</span>
+      <a href="" target="_blank">
+        <li>登录</li>
+      </a>
+      <span>|</span>
+      <a href="" target="_blank">
+        <li>注册</li>
+      </a>
+      <span>|</span>
+      <a href="" target="_blank">
+        <li>消息通知</li>
+      </a>
+      <span>|</span>
+      <a href="" target="_blank">
+        <li>购物车</li>
+      </a>
+    </ul>
+
+  </div>
+  <div class="logo">
+
+  </div>
+
+  <div id="a">
+    <input type="radio" name="xiaomi" class="y">
+
+    <input type="radio" name="xiaomi" class="o">
+
+    <input type="radio" name="xiaomi" class="i">
+
+    <input type="radio" name="xiaomi" class="u">
+
+    <input type="radio" name="xiaomi" class="">
+
+    <label for="p" class="left"></label>
+    <label for="o" class="left"></label>
+    <label for="i" class="left"></label>
+    <label for="u" class="left"></label>
+    <label for="y" class="left"></label>
+<section>
+  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/abb3bf8ca4bb3f823d1f962e98679f04.jpg?w=2452&h=920" alt="p">
+  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ad84d80e7fc5990162a387a6b103af01.jpeg?thumb=1&w=1226&h=460"
+    alt="o">
+  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0973f3bcb983e63152829e97c0ca3795.jpg?thumb=1&w=1226&h=460"
+    alt="i">
+  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e52c3e98602b90f198ec316dce253cba.jpg?thumb=1&w=1226&h=460"
+    alt="u">
+  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/05bc8af40fc9f9941808d253034c279d.jpg?thumb=1&w=1226&h=460"
+    alt="y">
+</section>
+
+    <label for="p" class="right"></label>
+    <label for="o" class="right"></label>
+    <label for="i" class="right"></label>
+    <label for="u" class="right"></label>
+    <label for="y" class="right"></label>
+
+
+
+
+  </div>
+</body>
+
+</html>

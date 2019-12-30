@@ -193,11 +193,11 @@
     var x = (prompt())
 
   if (x.charCodeAt(0) % 2 == 0) {
-      console.log('no')
+      console.log('NO')
     }
 
     else if ((x.charCodeAt(0) % 2 > 0)) {
-      console.log('yes')
+      console.log('YES')
     }
   </script>
 <script type="x" id="ch0104/05">
@@ -268,7 +268,7 @@
 <script type="x" id="ch0104/10">
     var a = Number(prompt())
     var b = Number(prompt())
-  if(a >= 60 && b >= 60){
+  if(a >= 60 || b >= 60){
       console.log(1)
     }
     else{
@@ -297,12 +297,13 @@
   </script>
 <script type="x" id="ch0104/13">
     var x = Number(prompt())
-  if (0 <= x && x < 5){
-      console.log((-x + 2.5).toFixed(3))}
+    if (0 <= x && x < 5){
+      console.log((-x + 2.5).toFixed(3))
+    }
     else if (5 <=x && x < 10) {
-      console.log((2 - 1.5(x - 3)(x
-        - 3)).toFixed(3)) 、
-  } else if (10 <=x && x < 20) {
+      console.log((2 - 1.5(x - 3)(x- 3)).toFixed(3))
+  }
+    else if (10 <=x && x < 20) {
       console.log((x / 2 - 1.5).toFixed(3))
     }
   </script>
@@ -328,10 +329,10 @@
     var b = Number(prompt())
     var c = Number(prompt())
     if(a + b > c || a + c > b || b + c > a){
-      console.log('YES')
+      console.log('yes')
     }
     else{
-      console.log('NO')
+      console.log('no')
     }
     </script>
 <script type="x" id="ch0104/17">
@@ -347,9 +348,9 @@
       var a = Number(prompt())
       var b = Number(prompt())
   if(-1 <= a && a <=1 && b>= -1 && b <= 1 ){
-        console.log('YES')}
+        console.log('yes')}
       else{
-        console.log('NO')
+        console.log('no')
       }
     </script>
 <script type="x" id="ch0104/19">

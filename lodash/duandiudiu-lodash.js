@@ -72,4 +72,5 @@ var duandiudiu = {
     } else {
       return []
     }
-  },
+  }
+}
